@@ -47,4 +47,4 @@ These are screenshots of the delpoyed app!
 
 ## My app 
 
-Resources I used to create this include insomnia, Heroku deployment documentation, and express.js documentation. 
+Resources I used to create this include insomnia, Heroku deployment documentation, and express.js documentation as well as stack overflow. I was also able to work with a partner to ask questions and complete the routing section of this app. 
