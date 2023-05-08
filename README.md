@@ -1,7 +1,7 @@
 # Note-taker
 
 My app is deployed on Heroku, here is the link! https://mynote-creator-app.herokuapp.com/notes
-In this app the user is able to take notes, delted notes, and fix existing notes. Click on the link to check it out!!
+In this app the user is able to take notes and delete notes. Click on the link to check it out!!
 
 ## User Story 
 AS A small business owner
