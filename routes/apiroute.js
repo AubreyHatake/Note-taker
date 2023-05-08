@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs')
 
 // npm package
-var uniqid = require('uniqid');
+const {v4} = require('uuid');
 
 
 // routing
@@ -11,7 +11,9 @@ module.exports = (app) => {
 
   // GET /api/notes should read the db.json file and return all saved notes as JSON.
   app.get('/api/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '../db/db.json'));
+    let db = fs.readFileSync('db/db.json');
+    db = JSON.parse(db);
+    res.json(db);
   });
 
   // POST /api/notes should receive a new note to save on the request body, 
@@ -19,13 +21,13 @@ module.exports = (app) => {
   app.post('/api/notes', (req, res) => {
     let db = fs.readFileSync('db/db.json');
     db = JSON.parse(db);
-    res.json(db);
+    // res.json(db);
     // creating body for note
     let userNote = {
       title: req.body.title,
       text: req.body.text,
       // creating unique id for each note
-      id: uniqid(),
+      id: v4(),
     };
     // pushing created note to be written in the db.json file
     db.push(userNote);
