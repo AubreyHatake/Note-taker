@@ -44,3 +44,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 These are screenshots of the delpoyed app!
 
 ![note taker image](images/note-taker.jpg)
+
+## My app 
+
+Resources I used to create this include insomnia, Heroku deployment documentation, and express.js documentation. 
